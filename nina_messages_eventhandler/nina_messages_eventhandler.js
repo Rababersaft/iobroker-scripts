@@ -66,11 +66,11 @@
 // ***** CONFIGURATION ******
 
 var debuggingActive = true; // active/disable debugging log messages
-var noSendOnFirstAgsRun = true; // true = do not send infos on first run to avoid to infos for old messages
+var noSendOnFirstAgsRun = false; // true = do not send infos on first run to avoid to infos for old messages
 
 var sendToPushover = false; // Pushover adapter needed
-var sendToTelegram = false; // Telegram adapter needed
-var sendToTelegramUser = '<USER>'; // the Telegram user
+var sendToTelegram = true; // Telegram adapter needed
+var sendToTelegramUser = 'Rababersaft'; // the Telegram user
 
 var ninaAdapter = 'nina';
 var ninaAdapterInstance = '0';
