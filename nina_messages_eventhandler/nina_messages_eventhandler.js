@@ -70,7 +70,8 @@ var noSendOnFirstAgsRun = false; // true = do not send infos on first run to avo
 
 var sendToPushover = false; // Pushover adapter needed
 var sendToTelegram = true; // Telegram adapter needed
-var sendToTelegramUser = 'Rababersaft'; // the Telegram user
+var sendToTelegramUser = 'Rababersaft, Meike, Agent'; // the Telegram user
+var TelegramInstance = '0'; // the Instance Telegram adapter
 
 var ninaAdapter = 'nina';
 var ninaAdapterInstance = '0';
@@ -431,7 +432,7 @@ function sendMsgTo(text) {
     }
 
     if(sendToTelegram) {
-       sendTo('telegram', {user: sendToTelegramUser, text: text});
+       sendTo('telegram' + '.' + TelegramInstance, {user: sendToTelegramUser, text: text});
     }
 }
 
